@@ -79,12 +79,12 @@ def index():
   		}
   		p.content {
   		font-family: freight-sans-pro,
-        sans-serif;
-        font-weight: 300;
-        font-style: normal;
-        color: #074470;
-        font-size: 25;
-        font-style:bold;
+		sans-serif;
+		font-weight: 300;
+		font-style: normal;
+		color: #074470;
+		font-size: 25;
+		font-style:bold;
   		}
   		form.main {
   		font-family: freight-sans-pro,sans-serif;

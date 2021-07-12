@@ -28,26 +28,28 @@ def index():
         <head> <title> Running Calculator </title>
         <style>
 		input[type=text] {
-  		width: 20vw;
-  		padding: 10px 10px;
-  		margin: 8px 0;
-  		box-sizing: border-box;
-  		border: 2px solid #000000;
-  		border-radius: 4px;
+  		display: flex;
+  		flex-direction: column;
+  		font-family: freight-sans-pro;
+  		font-size: 25;
+  		border: 5px solid #074470;
+  		color: rgba(12,12,12, 1);
+  		margin-left: 10px;
   		}
   		input[type=datetime] {
-  		width: 20vw;
-  		padding: 10px 10px;
-  		margin: 8px 0;
-  		box-sizing: border-box;
-  		border: 2px solid #074470;
-  		border-radius: 4px;
+  		display: flex;
+  		flex-direction: column;
+  		font-family: freight-sans-pro;
+  		font-size: 25;
+  		border: 5px solid #074470;
+  		color: rgba(12,12,12, 1);
+  		margin-left: 10px;
   		}
   		input[type=submit] {
   		display: flex;
   		flex-direction: column;
   		font-family: freight-sans-pro;
-  		size: 20;
+  		font-size: 35;
   		border: 2px solid #074470;
   		color: rgba(12,12,12, 1);
   		}
@@ -56,49 +58,73 @@ def index():
   		background-repeat: no-repeat; 
   		background-size: cover; 
   		}
+  		h1.basic {
+  		font-family: freight-sans-pro, sans-serif;
+  		font-weight: 500;font-style: italic;
+  		font-size: 60;
+  		}
+  		p.important {
+  		font-family: freight-sans-pro,sans-serif;
+  		font-weight: 600;
+  		font-style: normal;
+  		color: #074470;
+  		font-size: 25
+  		}
+  		p.finaloutput {
+  		font-family: freight-sans-pro;
+  		font-weight: 600;
+  		font-style: normal;
+  		color: #074470;
+  		font-size: 30;
+  		}
+  		p.content {
+  		font-family: freight-sans-pro,
+        sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: #074470;
+        font-size: 25;
+        font-style:bold;
+  		}
+  		form.main {
+  		font-family: freight-sans-pro,sans-serif;
+  		font-weight: 300;
+  		font-style: normal;
+  		color: #074470;
+  		font-size: 25;
+  		}
 		</style>
         <meta name="google-site-verification" content="V8H7aaaQsnfG1eYLO53su1jSljjeWU9JQljkzPUiZ00" />
         <meta name="viewport" content="width=device-width, initial-scale=0.9">
         <link rel="stylesheet" href="https://use.typekit.net/bcc4lnw.css">
-        <h1 style = "font-family: freight-sans-pro, sans-serif;font-weight: 500;font-style: italic;font-size: 50 ">
-        Running Pace Calculator </h1>
-        <p style = "font-family: freight-sans-pro,
-        sans-serif;font-weight: 600;font-style: normal;color: #074470;font-size: 25">
-        Enter any two to calculate pace, time or distance. </p>
+        <h1 class = "basic"> Running Pace Calculator </h1>
+        <p class = "important"> Enter any two to calculate pace, time or distance. </p>
         <body>
-        <form action="" method="get" style = "font-family: freight-sans-pro,
-        sans-serif;font-weight: 300;font-style: normal;color: #074470;font-size: 25">
+        <form class="main" action="" method="get">
                 Running Time: <input type="datetime" name="running_time">
-                <br>
-                <br>
+                
                 Running Distance (Miles): <input type = "text" name = "running_distance">
-                <br>
-                <br>
+                
                 Running Pace (Minutes Per Mile): <input type = "text" name = "running_pace"
-                <br>
                 <br>
                 <br>
                 <input type="submit" value="Convert">
             </form>
             </body>
             </head> """
-        + f"""<p style = "font-family: freight-sans-pro, sans-serif;font-weight: 300;font-style: italic;font-size: 30 "> {final_output} </p>"""
+        + f"""<p class="finaloutput"> {final_output} </p>"""
         +
     """
-        <p style = "font-family: freight-sans-pro,
-        sans-serif;font-weight: 800;font-style: normal;color: #074470;font-size: 25;font-style:bold;">
+        <p class="important">
         Who Uses a Pace Calculator? </p>
-        <p style = "font-family: freight-sans-pro,
-        sans-serif;font-weight: 300;font-style: normal;color: #074470;font-size: 18;">
+        <p class="content">
         Both new and experienced runners can benefit from pace calculators.
         Knowing your pace can help you train and run better, whether you're
         running your first race, striving to set a personal best, or going for a training run.
          </p>
-        <p style = "font-family: freight-sans-pro,
-        sans-serif;font-weight: 800;font-style: normal;color: #074470;font-size: 25;">
+        <p class="important">
         Why are pace calculators useful? </p>
-        <p style = "font-family: freight-sans-pro,
-        sans-serif;font-weight: 300;font-style: normal;color: #074470;font-size: 18;">
+        <p class="content">
         Pace calculators can help you figure out how quickly you should
         run if you have a specific finish time in mind for a particular distance or race.
         Find out what speed you need to run a 20-minute 5K or a sub-1:30 half marathon, for example.
@@ -112,8 +138,7 @@ def index():
         Finally, they can assist you in determining the distance you ran. For example,
         you may figure out how far you ran by entering your pace and the length of
         your training run or race.
-        <p style = "font-family: freight-sans-pro,
-        sans-serif;font-weight: 800;font-style: normal;color: #074470;font-size: 25;"> Powered by Google Cloud Computing </p>
+        <p class="important"> Powered by Google Cloud Computing </p>
         """
     )
 

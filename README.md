@@ -8,4 +8,4 @@ I published it online using the google cloud sdk.
 
 If you have any questions or comments about my code, I would love feedback!
 
-Here is the link to the pace calculator: https://pace-calc-341405.uw.r.appspot.com/
+Here is the link to the pace calculator: https://running-pace-calculator.colinfitzgeral2.repl.co

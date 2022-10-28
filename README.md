@@ -8,4 +8,6 @@ I published it online using the google cloud sdk.
 
 If you have any questions or comments about my code, I would love feedback!
 
+Also, a fair warning that the repl backend is free so it'll take a bit to boot the app. Thanks for your patience!
+
 Here is the link to the pace calculator: https://running-pace-calculator.colinfitzgeral2.repl.co
